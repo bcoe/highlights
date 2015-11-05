@@ -38,4 +38,4 @@ module.exports = (grunt) ->
   grunt.registerTask('lint', ['coffeelint'])
   grunt.registerTask('default', ['coffeelint', 'coffee'])
   grunt.registerTask('test', ['default', 'lint', 'shell:test'])
-  grunt.registerTask('prepublish', ['clean', 'build-grammars'])
+  grunt.registerTask('prepublish', ['clean', 'build-grammars', 'coffee'])
